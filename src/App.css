@@ -1,0 +1,155 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+  background: hsl(0, 0%, 98%);
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  height: 80px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111517;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: #111517;
+  margin-bottom: 16px;
+}
+
+p {
+  display: flex;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111517;
+  margin-bottom: 8px;
+}
+
+span {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #111517;
+}
+
+header button {
+  display: flex;
+  gap: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.moon {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 678px) {
+  .headerWrapper {
+    width: 568px;
+  }
+
+  .headerBtn {
+    height: 22px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  header span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .moon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 982px) {
+  .headerWrapper {
+    width: 872px;
+  }
+}
+@media screen and (min-width: 1286px) {
+  .headerWrapper {
+    width: 1176px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .headerWrapper {
+    width: 1280px;
+  }
+}
